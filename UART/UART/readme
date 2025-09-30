@@ -1,0 +1,3 @@
+komunikace mezi dvouma raspberry pi pico skrze uart
+
+skrze uart jsme ovládali ledku a servo
