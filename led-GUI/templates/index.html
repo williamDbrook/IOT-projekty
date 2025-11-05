@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Ovládání LEDky</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; margin-top: 100px; }
+    button {
+      font-size: 24px;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      background-color: {{ 'green' if led_on else 'gray' }};
+    }
+  </style>
+</head>
+<body>
+  <h1>LED je {{ 'ZAPNUTÁ' if led_on else 'VYPNUTÁ' }}</h1>
+  <form action="/toggle">
+    <button type="submit">{{ 'Vypnout' if led_on else 'Zapnout' }}</button>
+  </form>
+</body>
+</html>
